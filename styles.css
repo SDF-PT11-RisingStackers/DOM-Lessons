@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 5px;
+}
+
+#page-title {
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-style: italic;
+  background-color: blue;
+  color:white;
+  padding:20px;
+  border-radius: 5px;
+
+}
+
+.item {
+  margin: 5px 0;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
