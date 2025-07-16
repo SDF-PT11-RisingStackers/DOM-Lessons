@@ -1,0 +1,34 @@
+Communicating with the server
+=================================
+{
+    "liked":true,
+    "user":"Nancy"
+}
+how JS use AJAX?
+---------------
+*HTTP requests:HYPERTEXT TRANSFER PROTOCOL
+* fetch method: a javascript function that make HTTP requests to a server 
+Common Verbs:
+GET: get a resource
+POST: Send new data
+PUT:update an existing resource
+PATCH: partially update a resource
+DELETE: remove a resource
+github.com/users: give me the list of users=GET requests
+github.com/new:create a new repo=POST requests
+
+client-->request(url,http method,headers,body)-->server-->response(actual content,status code)--> client 
+200:sucess
+201:resource created
+404:not found
+500:server error
+
+Syntax
+========
+fetch(url,options)
+.then(response=>{
+    //handle the response
+})
+.catch(error=>{
+    //handles any errors
+})

@@ -1,28 +1,24 @@
+const container = document.getElementById('articles-container');
 
-// select the element
-const heading=document.getElementById("page-title")
-const paragraphs=document.getElementsByClassName("description")
-const listItems=document.getElementsByTagName("li")
-const oneParagraph=document.querySelector(".description")
-const items=document.querySelectorAll(".item")
-const p= document.querySelector("p")
-let x=document.getElementsByClassName("item-2")
+fetch('http://localhost:3000/articles')
+  .then(response => response.json())
+  .then(articles => {
+    articles.forEach(article => {
+      const div = document.createElement('div');
+      div.classList.add('article');
 
-// console.log(heading)
-console.log(paragraphs)
-console.log(listItems)
-console.log(oneParagraph)
-console.log(items)
+      div.innerHTML = `
+        <h2>${article.title}</h2>
+        <p><strong>Author:</strong> ${article.author}</p>
+        <p><strong>Date:</strong> ${article.date}</p>
+        <p>${article.content}</p>
+        <p class="tags"><strong>Tags:</strong> ${article.tags.join(', ')}</p>
+      `;
 
-// change DOM elements
-//.textContent
-heading.textContent="My first paragraph"
-
-// .innerHTML
-oneParagraph.innerText="My first paragraph"
-oneParagraph.style.backgroundColor="red"
-// oneParagraph.style.padding="20px"
-oneParagraph.style.fontSize="30px"
-oneParagraph.style.borderRadius="10px"
-p.classList.add("first-paragraph")
-x.classList.remove()
+      container.appendChild(div);
+    });
+  })
+  .catch(error => {
+    container.innerHTML = `<p style="color:red;">Failed to load articles. Please check the server.</p>`;
+    console.error('Error fetching articles:', error);
+  });

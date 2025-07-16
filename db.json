@@ -1,0 +1,68 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Intro to AJAX",
+      "content": "AJAX lets us talk to servers",
+      "author": "Nancy Umutoniwase",
+      "date": "2025-07-10",
+      "tags": ["AJAX", "JavaScript", "Web"]
+    },
+    {
+      "id": 2,
+      "title": "Using Fetch",
+      "content": "fetch() makes requests easy",
+      "author": "Brian Muema",
+      "date": "2025-07-11",
+      "tags": ["fetch", "API", "JavaScript"]
+    },
+    {
+      "id": 3,
+      "title": "Understanding JSON",
+      "content": "JSON is a lightweight data-interchange format",
+      "author": "Beatrice Wambui",
+      "date": "2025-07-12",
+      "tags": ["JSON", "Data", "API"]
+    },
+    {
+      "id": 4,
+      "title": "Event Listeners in JS",
+      "content": "Use addEventListener() to respond to user actions",
+      "author": "Eric Ochiel",
+      "date": "2025-07-13",
+      "tags": ["Events", "JavaScript", "DOM"]
+    },
+    {
+      "id": 5,
+      "title": "Working with APIs",
+      "content": "APIs allow applications to communicate and share data",
+      "author": "Rebecca Kibisu",
+      "date": "2025-07-13",
+      "tags": ["API", "JavaScript", "Web"]
+    },
+    {
+      "id": 6,
+      "title": "Debugging in JavaScript",
+      "content": "Use console.log and browser tools to find bugs",
+      "author": "Oscar Ochanda",
+      "date": "2025-07-14",
+      "tags": ["Debugging", "JavaScript", "Tools"]
+    },
+    {
+      "id": 7,
+      "title": "DOM Manipulation",
+      "content": "The DOM lets JavaScript interact with HTML",
+      "author": "Beryl Owino",
+      "date": "2025-07-14",
+      "tags": ["DOM", "JavaScript", "HTML"]
+    },
+    {
+      "id": 8,
+      "title": "Single Page Applications",
+      "content": "SPAs use JS to create dynamic, reload-free websites",
+      "author": "Wayne Ohito",
+      "date": "2025-07-15",
+      "tags": ["SPA", "Frontend", "JavaScript"]
+    }
+  ]
+}
