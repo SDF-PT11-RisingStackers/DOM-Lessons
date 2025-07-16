@@ -1,10 +1,11 @@
 {
-  "name": "json-api",
+  "name": "dom-lessons",
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js"
-  },
+  }, 
   "dependencies": {
-    "json-server": "^0.17.3"
+    "json-server":"^0.17.3"
   }
-}
+  }
+  
